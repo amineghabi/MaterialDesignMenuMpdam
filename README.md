@@ -20,7 +20,7 @@ there is a screenshot for this styled Menu animation.
 3. In your `onCreate` method you need to config and build animation with GuillotineAnimation.GuillotineBuilder
 
 	```java
-    new GuillotineAnimation.GuillotineBuilder(guillotineMenu, guillotineMenu.findViewById(R.id.guillotine_hamburger), contentHamburger)
+    new AndrogeekAnimation.GuillotineBuilder(guillotineMenu, guillotineMenu.findViewById(R.id.guillotine_hamburger), contentHamburger)
                 .setActionBarViewForAnimation(toolbar)
                 .build();
      ```
