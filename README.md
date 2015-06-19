@@ -4,7 +4,7 @@ New library, that provides a simple way to implement styled Menu animation
 
 
 
-there is a screenshot for this styled Menu animati.
+there is a screenshot for this styled Menu animation.
 
 <img src="https://d13yacurqjgara.cloudfront.net/users/495792/screenshots/2018249/draft_06.gif" alt="Guillotine animation gif" style="width:800;height:600">
 
@@ -42,16 +42,4 @@ Builder allows you to customize start delay, duration, interpolation and you can
   
 ## License
 
-    Copyright 2015, Yalantis
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+    Copyright 2015, MPDAM ISETR .
