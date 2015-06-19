@@ -39,10 +39,10 @@ public class MainActivity extends AppCompatActivity {
             getSupportActionBar().setTitle(null);
         }
 
-        View guillotineMenu = LayoutInflater.from(this).inflate(R.layout.guillotine, null);
-        root.addView(guillotineMenu);
+        View AndrogeekMenu = LayoutInflater.from(this).inflate(R.layout.androgeek, null);
+        root.addView(AndrogeekMenu);
 
-        new AndrogeekAnimation.GuillotineBuilder(guillotineMenu, guillotineMenu.findViewById(R.id.guillotine_hamburger), contentHamburger)
+        new AndrogeekAnimation.GuillotineBuilder(AndrogeekMenu, AndrogeekMenu.findViewById(R.id.androgeek_hamburger), contentHamburger)
                 .setStartDelay(RIPPLE_DURATION)
                 .setActionBarViewForAnimation(toolbar)
                 .build();
