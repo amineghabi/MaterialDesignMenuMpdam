@@ -3,7 +3,7 @@ package com.Mpdam.Androggek.util;
 import android.animation.TimeInterpolator;
 
 /**
- * Created by Dmytro Denysenko on 5/15/15.
+ * Created by Amin Ghabi on 5/15/15.
  */
 public class ActionBarInterpolator implements TimeInterpolator {
 

@@ -7,14 +7,14 @@ import android.os.Build;
 import android.view.View;
 import android.view.ViewTreeObserver;
 
-import com.Mpdam.Androggek.interfaces.GuillotineListener;
+import com.Mpdam.Androggek.interfaces.AndrogeekListener;
 import com.Mpdam.Androggek.util.ActionBarInterpolator;
-import com.Mpdam.Androggek.util.GuillotineInterpolator;
+import com.Mpdam.Androggek.util.AndrogeekInterpolator;
 
 /**
- * Created by Dmytro Denysenko on 5/6/15.
+ * Created by Amin Ghabi on 5/6/15.
  */
-public class GuillotineAnimation {
+public class AndrogeekAnimation {
     private static final String ROTATION = "rotation";
     private static final float GUILLOTINE_CLOSED_ANGLE = -90f;
     private static final float GUILLOTINE_OPENED_ANGLE = 0f;
@@ -25,7 +25,7 @@ public class GuillotineAnimation {
     private final long mDuration;
     private final ObjectAnimator mOpeningAnimation;
     private final ObjectAnimator mClosingAnimation;
-    private final GuillotineListener mListener;
+    private final AndrogeekListener mListener;
     private final boolean mIsRightToLeftLayout;
     private final TimeInterpolator mInterpolator;
     private final View mActionBarView;
@@ -34,14 +34,14 @@ public class GuillotineAnimation {
     private boolean isOpening;
     private boolean isClosing;
 
-    private GuillotineAnimation(GuillotineBuilder builder) {
+    private AndrogeekAnimation(GuillotineBuilder builder) {
         this.mActionBarView = builder.actionBarView;
-        this.mListener = builder.guillotineListener;
+        this.mListener = builder.androgeekListener;
         this.mGuillotineView = builder.guillotineView;
         this.mDuration = builder.duration > 0 ? builder.duration : DEFAULT_DURATION;
         this.mDelay = builder.startDelay;
         this.mIsRightToLeftLayout = builder.isRightToLeftLayout;
-        this.mInterpolator = builder.interpolator == null ? new GuillotineInterpolator() : builder.interpolator;
+        this.mInterpolator = builder.interpolator == null ? new AndrogeekInterpolator() : builder.interpolator;
         setUpOpeningView(builder.openingView);
         setUpClosingView(builder.closingView);
         this.mOpeningAnimation = buildOpeningAnimation();
@@ -146,7 +146,7 @@ public class GuillotineAnimation {
 
     private ObjectAnimator buildClosingAnimation() {
         ObjectAnimator rotationAnimator = initAnimator(ObjectAnimator.ofFloat(mGuillotineView, ROTATION, GUILLOTINE_OPENED_ANGLE, GUILLOTINE_CLOSED_ANGLE));
-        rotationAnimator.setDuration((long) (mDuration * GuillotineInterpolator.ROTATION_TIME));
+        rotationAnimator.setDuration((long) (mDuration * AndrogeekInterpolator.ROTATION_TIME));
         rotationAnimator.addListener(new Animator.AnimatorListener() {
             @Override
             public void onAnimationStart(Animator animation) {
@@ -180,7 +180,7 @@ public class GuillotineAnimation {
 
     private void startActionBarAnimation() {
         ObjectAnimator actionBarAnimation = ObjectAnimator.ofFloat(mActionBarView, ROTATION, GUILLOTINE_OPENED_ANGLE, ACTION_BAR_ROTATION_ANGLE);
-        actionBarAnimation.setDuration((long) (mDuration * (GuillotineInterpolator.FIRST_BOUNCE_TIME + GuillotineInterpolator.SECOND_BOUNCE_TIME)));
+        actionBarAnimation.setDuration((long) (mDuration * (AndrogeekInterpolator.FIRST_BOUNCE_TIME + AndrogeekInterpolator.SECOND_BOUNCE_TIME)));
         actionBarAnimation.setInterpolator(new ActionBarInterpolator());
         actionBarAnimation.start();
     }
@@ -203,7 +203,7 @@ public class GuillotineAnimation {
         private final View openingView;
         private final View closingView;
         private View actionBarView;
-        private GuillotineListener guillotineListener;
+        private AndrogeekListener androgeekListener;
         private long duration;
         private long startDelay;
         private boolean isRightToLeftLayout;
@@ -221,8 +221,8 @@ public class GuillotineAnimation {
             return this;
         }
 
-        public GuillotineBuilder setGuillotineListener(GuillotineListener guillotineListener) {
-            this.guillotineListener = guillotineListener;
+        public GuillotineBuilder setAndrogeekListener(AndrogeekListener androgeekListener) {
+            this.androgeekListener = androgeekListener;
             return this;
         }
 
@@ -251,8 +251,8 @@ public class GuillotineAnimation {
             return this;
         }
 
-        public GuillotineAnimation build() {
-            return new GuillotineAnimation(this);
+        public AndrogeekAnimation build() {
+            return new AndrogeekAnimation(this);
         }
     }
 }

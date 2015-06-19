@@ -7,8 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import com.Mpdam.Androggek.animation.GuillotineAnimation;
 import com.Mpdam.Androggek.MaterialDesignSample.R;
+import com.Mpdam.Androggek.animation.AndrogeekAnimation;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         View guillotineMenu = LayoutInflater.from(this).inflate(R.layout.guillotine, null);
         root.addView(guillotineMenu);
 
-        new GuillotineAnimation.GuillotineBuilder(guillotineMenu, guillotineMenu.findViewById(R.id.guillotine_hamburger), contentHamburger)
+        new AndrogeekAnimation.GuillotineBuilder(guillotineMenu, guillotineMenu.findViewById(R.id.guillotine_hamburger), contentHamburger)
                 .setStartDelay(RIPPLE_DURATION)
                 .setActionBarViewForAnimation(toolbar)
                 .build();

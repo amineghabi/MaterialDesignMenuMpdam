@@ -3,16 +3,16 @@ package com.Mpdam.Androggek.util;
 import android.animation.TimeInterpolator;
 
 /**
- * Created by Dmytro Denysenko on 5/7/15.
+ * Created by Amin Ghabi on 5/7/15.
  */
-public class GuillotineInterpolator implements TimeInterpolator {
+public class AndrogeekInterpolator implements TimeInterpolator {
 
     public static final float ROTATION_TIME = 0.46667f;
     public static final float FIRST_BOUNCE_TIME = 0.26666f;
     public static final float SECOND_BOUNCE_TIME = 0.26667f;
 
 
-    public GuillotineInterpolator() {
+    public AndrogeekInterpolator() {
     }
 
     public float getInterpolation(float t) {

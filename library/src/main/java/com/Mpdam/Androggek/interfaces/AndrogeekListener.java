@@ -1,9 +1,9 @@
 package com.Mpdam.Androggek.interfaces;
 
 /**
- * Created by Dmytro Denysenko on 5/6/15.
+ * Created by Amin Ghabi on 5/6/15.
  */
-public interface GuillotineListener {
+public interface AndrogeekListener {
     void onGuillotineOpened();
     void onGuillotineClosed();
 }
