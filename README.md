@@ -1,4 +1,4 @@
-# GhabiMD animation
+# Androgeek animation
 
 New library, that provides a simple way to implement Material design styled Menu animation for your apps.
 
