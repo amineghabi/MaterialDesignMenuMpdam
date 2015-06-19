@@ -1,6 +1,6 @@
 # Guillotine animation
 
-New library, that provides a simple way to implement styled Menu animation
+New library, that provides a simple way to implement Material design styled Menu animation.
 
 
 
