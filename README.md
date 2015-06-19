@@ -17,7 +17,7 @@ there is a screenshot for this styled Menu animation.
 
 2. Your hamburger on navigation menu must have exactly same coordinates as hamburger on ActionBar.
 
-3. In your `onCreate` method you need to config and build animation with GuillotineAnimation.GuillotineBuilder
+3. In your `onCreate` method you need to config and build animation with AndrogeekAnimation.GuillotineBuilder
 
 	```java
     new AndrogeekAnimation.GuillotineBuilder(guillotineMenu, guillotineMenu.findViewById(R.id.guillotine_hamburger), contentHamburger)
