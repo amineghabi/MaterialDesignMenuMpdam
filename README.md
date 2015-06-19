@@ -2,9 +2,7 @@
 
 New library, that provides a simple way to implement Material design styled Menu animation for your apps.
 
-
-
-there is a screenshot for this styled Menu animation.
+this is a screenshot for this styled Menu animation.
 
 <img src="https://d13yacurqjgara.cloudfront.net/users/495792/screenshots/2018249/draft_06.gif" alt="Guillotine animation gif" style="width:800;height:600">
 
