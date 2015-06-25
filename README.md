@@ -41,3 +41,4 @@ Builder allows you to customize start delay, duration, interpolation and you can
 ## License
 
     Copyright 2015, MPDAM ISETR .
+    L'Androgeek Amin Ghabi .
